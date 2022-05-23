@@ -86,14 +86,14 @@
 
       <div class="btn-toolbar text-center" role="toolbar" aria-label="Toolbar with button groups" style="display: block;">
         <div class="btn-group me-2" role="group" aria-label="First group">
-          <button type="button" class="btn btn-secondary">1</button>
-          <button type="button" class="btn btn-secondary">2</button>
-          <button type="button" class="btn btn-secondary">3</button>
-          <button type="button" class="btn btn-secondary">4</button>
-          <button type="button" class="btn btn-secondary">5</button>
-          <button type="button" class="btn btn-secondary">6</button>
-          <button type="button" class="btn btn-secondary">7</button>
-          <button type="button" class="btn btn-secondary">8</button>
+          <button type="button" class="btn btn-dark">1</button>
+          <button type="button" class="btn btn-dark">2</button>
+          <button type="button" class="btn btn-dark">3</button>
+          <button type="button" class="btn btn-dark">4</button>
+          <button type="button" class="btn btn-dark">5</button>
+          <button type="button" class="btn btn-dark">6</button>
+          <button type="button" class="btn btn-dark">7</button>
+          <button type="button" class="btn btn-dark">8</button>
         </div>
       </div>
 
@@ -102,8 +102,8 @@
       </div> <!-- Container -->
       </div>
 
-    <footer class="blog-footer text-center">
-      <p>ดูหนัง ออนไลน์ฟรี ที่นี้เลย<a href="./"> Movie PHP</a></p>
+    <footer class="text-center">
+      <p class="bg-dark" style="margin: 0; color: #fff;">ดูหนัง ออนไลน์ฟรี ที่นี้เลย<a href="./" style="color: #fff; text-decoration: none;"> Movie PHP</a></p>
     </footer>
 
     </body>
