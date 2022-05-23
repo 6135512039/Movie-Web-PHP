@@ -13,10 +13,10 @@
     </head>
     <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
 
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">Movie-PHP</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -25,24 +25,12 @@
 
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <a class="nav-link active" aria-current="page" href="#">หน้าแรก</a>
                 </li>
 
                 <li class="nav-item dropdown me-auto">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown link
+                      หมวดหมู่
                     </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                       <li><a class="dropdown-item" href="#">Action</a></li>
@@ -50,10 +38,19 @@
                       <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>
                 </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ติดต่อเรา</a>
+                </li>
             </ul>
-
             </div>
 
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            &nbsp;&nbsp;
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="display: flex;">ค้นหา</button>
+                
         </div>
 
     </nav>
@@ -61,31 +58,28 @@
     <div class="album py-5 bg-light">
     <div class="container">
 
-    <nav>
-      <div class="nav nav-tabs" id="nav-tab" role="tablist">
-        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
-      </div>
-    </nav>
-
-      <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
-        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
-      </div>
-
-
+      <nav class="navbar navbar-light bg-dark" style="border-radius: 0.5rem;">
+        <form class="container-fluid justify-content-start">
+          <a class="nav-link" style="text-decoration: none; color: #fff;" href="#">หน้าแรก</a>
+          &nbsp;
+          <a class="nav-link" style="text-decoration: none; color: #fff;" href="#">ล่าสุด</a>
+        </form>
+      </nav>
+      <br/>
       <div class="row">
 
       <?php for($i=1;$i<=12;$i++){ ?>
 
         <div class="col-md-3">
           <div class="card mb-4 shadow-sm">
-          <img src="https://www.fairy-anime.com/wp-content/uploads/2020/01/%E0%B8%99%E0%B8%B2%E0%B8%A3%E0%B8%B9%E0%B9%82%E0%B8%95%E0%B8%B0-%E0%B8%95%E0%B8%B3%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%A2%E0%B8%B8%E0%B8%AA%E0%B8%A5%E0%B8%B2%E0%B8%95%E0%B8%B1%E0%B8%99-%E0%B9%80%E0%B8%94%E0%B8%AD%E0%B8%B0%E0%B8%A1%E0%B8%B9%E0%B8%9F%E0%B8%A7%E0%B8%B5%E0%B9%88-10-%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%95%E0%B8%B3%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%A2%E0%B8%B8%E0%B8%AA%E0%B8%A5%E0%B8%B2%E0%B8%95%E0%B8%B1%E0%B8%99.jpg" alt="" width="100%" height="400"/> 
-          <div class="card-body">
+            <a class="text-center" style="color: black; text-decoration: none;" href="./">
+            <img src="https://www.fairy-anime.com/wp-content/uploads/2020/01/%E0%B8%99%E0%B8%B2%E0%B8%A3%E0%B8%B9%E0%B9%82%E0%B8%95%E0%B8%B0-%E0%B8%95%E0%B8%B3%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%A2%E0%B8%B8%E0%B8%AA%E0%B8%A5%E0%B8%B2%E0%B8%95%E0%B8%B1%E0%B8%99-%E0%B9%80%E0%B8%94%E0%B8%AD%E0%B8%B0%E0%B8%A1%E0%B8%B9%E0%B8%9F%E0%B8%A7%E0%B8%B5%E0%B9%88-10-%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%95%E0%B8%B3%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%A2%E0%B8%B8%E0%B8%AA%E0%B8%A5%E0%B8%B2%E0%B8%95%E0%B8%B1%E0%B8%99.jpg" alt="" width="100%" height="400" class="card-img-top"/> 
+            
+            <div class="card-body">
               <p class="card-text text-center">Naruto</p>
             </div>
+            
+            </a>
           </div>
         </div>
       <?php } ?>
